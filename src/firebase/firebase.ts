@@ -1,15 +1,25 @@
 import { initializeApp } from "firebase/app"
 import { connectAuthEmulator, getAuth } from "firebase/auth"
 import { connectFirestoreEmulator, getFirestore } from "firebase/firestore"
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC5b6N6A1fFxdUyWdZh0RqxvfdM--YD8P0",
-  authDomain: "signal-9546d.firebaseapp.com",
-  projectId: "signal-9546d",
-  storageBucket: "signal-9546d.appspot.com",
-  messagingSenderId: "312735607354",
-  appId: "1:312735607354:web:78b487832370b170e32303",
-}
+  apiKey: "AIzaSyB3RMggiuswwVZVHZuE67uUml1ePrCl3sk",
+  authDomain: "mtd-midi.firebaseapp.com",
+  projectId: "mtd-midi",
+  storageBucket: "mtd-midi.appspot.com",
+  messagingSenderId: "506435978252",
+  appId: "1:506435978252:web:ab6abbdedac7924fa0da29",
+  measurementId: "G-QFW7HCTTKP"
+};
+
+// Initialize Firebase
+const analytics = getAnalytics(app);
 
 const app = initializeApp(firebaseConfig)
 
