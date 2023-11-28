@@ -9,7 +9,7 @@ import { StyledFirebaseAuth } from "../FirebaseAuth/StyledFirebaseAuth"
 
 import styled from "@emotion/styled"
 import "firebase/auth"
-import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth"
+import { GithubAuthProvider, GoogleAuthProvider, EmailAuthProvider } from "firebase/auth"
 import { Alert } from "../../../components/Alert"
 import { Button } from "../../../components/Button"
 import { Localized } from "../../../components/Localized"
@@ -63,6 +63,7 @@ export const SignInDialogContent: FC<SignInDialogContentProps> = ({
             signInOptions: [
               GoogleAuthProvider.PROVIDER_ID,
               GithubAuthProvider.PROVIDER_ID,
+              EmailAuthProvider.PROVIDER_ID
             ],
             callbacks: {
               signInSuccessWithAuthResult() {
