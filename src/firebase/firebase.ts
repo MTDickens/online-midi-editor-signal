@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app"
 import { connectAuthEmulator, getAuth } from "firebase/auth"
 import { connectFirestoreEmulator, getFirestore } from "firebase/firestore"
-import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -14,12 +14,11 @@ const firebaseConfig = {
   projectId: "mtd-midi",
   storageBucket: "mtd-midi.appspot.com",
   messagingSenderId: "506435978252",
-  appId: "1:506435978252:web:ab6abbdedac7924fa0da29",
-  measurementId: "G-QFW7HCTTKP"
+  appId: "1:506435978252:web:ab6abbdedac7924fa0da29"
 };
 
 // Initialize Firebase
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 
 const app = initializeApp(firebaseConfig)
 
